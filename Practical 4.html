@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 4</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    /* Top horizontal frame */
+    #top-frame {
+      height: 100px;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #top-frame img {
+      height: 75px;
+    }
+
+    #top-frame h1 {
+      font-size: 24px;
+    }
+
+    /* Bottom horizontal frame */
+    #bottom-frame {
+      height: 400px;
+      display: flex;
+    }
+
+    /* Left vertical frame */
+    #left-frame {
+      width: 200px;
+      background-color: #efefef;
+      padding: 10px;
+    }
+
+    #left-frame ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #left-frame li {
+      margin-bottom: 10px;
+    }
+
+    #left-frame a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Right vertical frame */
+    #right-frame {
+      flex: 1;
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    #right-frame h2 {
+      font-size: 20px;
+    }
+
+    #right-frame p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="top-frame">
+    <img src="College-Logo.png" alt="College Logo">
+    <h1>Ramanujan College</h1>
+  </div>
+
+  <div id="bottom-frame">
+    <div id="left-frame">
+      <ul>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#activities">Student Activities</a></li>
+      </ul>
+    </div>
+
+    <div id="right-frame">
+      <h2 id="faculty">Faculty</h2>
+      <p>Our faculty consists of renowned professors and experts in their respective fields.</p>
+
+      <h2 id="courses">Courses</h2>
+      <p>We offer a wide range of undergraduate and graduate courses in various disciplines.</p>
+
+      <h2 id="activities">Student Activities</h2>
+      <p>We have a vibrant student life with numerous extracurricular activities and events.</p>
+    </div>
+  </div>
+</body>
+</html>

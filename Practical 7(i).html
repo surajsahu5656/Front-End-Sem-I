@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+    <input type="number" id="inputNumber" placeholder="Enter a number">
+    <button id="generateButton">Generate Table</button>
+
+    <div id="multiplicationTable"></div>
+
+    <script>
+        const inputNumber = document.getElementById('inputNumber');
+        const generateButton = document.getElementById('generateButton');
+        const multiplicationTable = document.getElementById('multiplicationTable');
+
+        generateButton.addEventListener('click', generateTable);
+
+        function generateTable() {
+            const number = parseInt(inputNumber.value);
+            if (isNaN(number)) {
+                alert('Please enter a valid number');
+                return;
+            }
+
+            multiplicationTable.innerHTML = '';
+            const table = document.createElement('table');
+
+            for (let i = 1; i <= 10; i++) {
+                const row = document.createElement('tr');
+                const cell1 = document.createElement('td');
+                cell1.textContent = i;
+                row.appendChild(cell1);
+
+                const cell2 = document.createElement('td');
+                cell2.textContent = number * i;
+                row.appendChild(cell2);
+
+                table.appendChild(row);
+            }
+
+            multiplicationTable.appendChild(table);
+        }
+    </script>
+</body>
+</html>

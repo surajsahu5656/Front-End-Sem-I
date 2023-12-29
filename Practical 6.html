@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #ccc;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Faculty</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Meet the Faculty</a></li>
+                        <li><a href="#">Faculty Research</a></li>
+                        <li><a href="#">Contact Faculty</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Courses</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Undergraduate Courses</a></li>
+                        <li><a href="#">Graduate Courses</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Activities</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Student Clubs</a></li>
+                        <li><a href="#">Competitions</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p style="text-align: center;"><h1>Welcome to the Department of Computer Science</h1></p>
+        <p>The Department of Computer Science is committed to providing a high-quality education in computer science to our students. We offer a variety of undergraduate and graduate programs, as well as opportunities for research and internships.</p>
+        <p>Our faculty are experts in their field and are passionate about teaching computer science. They are committed to providing our students with the skills and knowledge they need to succeed in their chosen careers.</p>
+        <p>We encourage you to explore our website and learn more about the Department of Computer Science.</p>
+    </main>
+
+    <footer>
+        &copy; 2023 Ramanujan College
+    </footer>
+</body>
+</html>
